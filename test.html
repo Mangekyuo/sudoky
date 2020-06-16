@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="getNumber()">fdsfds</button>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.10.2/dist/sweetalert2.all.min.js"></script>
+<script src="sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+<script>
+   async function getNumber () {
+const {value: fruit} = await Swal.fire({
+      title: 'Select field validation',
+      input: 'select',
+      inputOptions: {
+        'fir': '1',
+        'seco': '2',
+        'thir': '3',
+        'fort': '4',
+        'fift': '5',
+        'sixt': '6',
+        'sevent': '7',
+        'eight': '8',
+        'nine': '9'
+
+      },
+      inputPlaceholder: 'Select a number',
+      showCancelButton: true,
+    })
+}
+</script>
+</html>
